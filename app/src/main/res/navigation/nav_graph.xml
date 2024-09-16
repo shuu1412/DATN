@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeScanFragment">
+
+    <fragment
+        android:id="@+id/homeScanFragment"
+        android:name="com.drbrosdev.studytextscan.ui.home.HomeScanFragment"
+        android:label="HomeScanFragment" >
+        <action
+            android:id="@+id/to_detailScanFragment"
+            app:destination="@id/detailScanFragment" />
+        <action
+            android:id="@+id/action_homeScanFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+        <action
+            android:id="@+id/action_homeScanFragment_to_supportFragment"
+            app:destination="@id/supportFragment" />
+        <action android:id="@+id/to_about_fragment"
+            app:destination="@id/aboutFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailScanFragment"
+        android:name="com.drbrosdev.studytextscan.ui.detailscan.DetailScanFragment"
+        android:label="DetailScanFragment" >
+        <action
+            android:id="@+id/to_pdfDialogFragment"
+            app:destination="@id/pdfDialogFragment" />
+        <argument
+            android:name="scan_id"
+            app:argType="integer" />
+        <argument
+            android:name="is_created"
+            app:argType="integer"
+
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.drbrosdev.studytextscan.ui.info.AboutFragment"
+        android:label="AboutFragment">
+
+        <action
+            android:id="@+id/to_licenses_fragment"
+            app:destination="@id/licencesFragment"/>
+
+        <action android:id="@+id/to_support_fragment"
+            app:destination="@id/supportFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/licencesFragment"
+        android:name="com.drbrosdev.studytextscan.ui.licences.LicencesFragment"
+        android:label="LicencesFragment" />
+    <dialog
+        android:id="@+id/pdfDialogFragment"
+        android:name="com.drbrosdev.studytextscan.ui.pdfDialog.PdfDialogFragment"
+        android:label="PdfDialogFragment">
+
+        <argument android:name="pdf_scan_id" app:argType="integer"/>
+
+    </dialog>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.drbrosdev.studytextscan.ui.onBoarding.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" />
+
+    <dialog
+        android:id="@+id/supportFragment"
+        android:name="com.drbrosdev.studytextscan.ui.support.SupportFragment"
+        android:label="fragment_support" />
+
+</navigation>
