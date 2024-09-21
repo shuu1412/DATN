@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.drbrosdev.studytextscan">
+    package="com.datn.studytextscan">
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -16,8 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyTextScan"
-        android:name=".MyApp">
-        <activity android:name=".MainActivity"
+        android:name="com.datn.studytextscan.MyApp">
+        <activity android:name="com.datn.studytextscan.MainActivity"
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="portrait"
             android:exported="true">

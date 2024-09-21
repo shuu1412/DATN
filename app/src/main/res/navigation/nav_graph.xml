@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeScanFragment"
-        android:name="com.drbrosdev.studytextscan.ui.home.HomeScanFragment"
+        android:name="com.datn.studytextscan.ui.home.HomeScanFragment"
         android:label="HomeScanFragment" >
         <action
             android:id="@+id/to_detailScanFragment"
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailScanFragment"
-        android:name="com.drbrosdev.studytextscan.ui.detailscan.DetailScanFragment"
+        android:name="com.datn.studytextscan.ui.detailscan.DetailScanFragment"
         android:label="DetailScanFragment" >
         <action
             android:id="@+id/to_pdfDialogFragment"
@@ -40,7 +40,7 @@
 
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.drbrosdev.studytextscan.ui.info.AboutFragment"
+        android:name="com.datn.studytextscan.ui.info.AboutFragment"
         android:label="AboutFragment">
 
         <action
@@ -54,11 +54,11 @@
 
     <fragment
         android:id="@+id/licencesFragment"
-        android:name="com.drbrosdev.studytextscan.ui.licences.LicencesFragment"
+        android:name="com.datn.studytextscan.ui.licences.LicencesFragment"
         android:label="LicencesFragment" />
     <dialog
         android:id="@+id/pdfDialogFragment"
-        android:name="com.drbrosdev.studytextscan.ui.pdfDialog.PdfDialogFragment"
+        android:name="com.datn.studytextscan.ui.pdfDialog.PdfDialogFragment"
         android:label="PdfDialogFragment">
 
         <argument android:name="pdf_scan_id" app:argType="integer"/>
@@ -66,13 +66,13 @@
     </dialog>
     <fragment
         android:id="@+id/viewPagerFragment"
-        android:name="com.drbrosdev.studytextscan.ui.onBoarding.ViewPagerFragment"
+        android:name="com.datn.studytextscan.ui.onBoarding.ViewPagerFragment"
         android:label="fragment_view_pager"
         tools:layout="@layout/fragment_view_pager" />
 
     <dialog
         android:id="@+id/supportFragment"
-        android:name="com.drbrosdev.studytextscan.ui.support.SupportFragment"
+        android:name="com.datn.studytextscan.ui.support.SupportFragment"
         android:label="fragment_support" />
 
 </navigation>

@@ -24,7 +24,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.drbrosdev.studytextscan"
+        applicationId "com.datn.scantotext"
         minSdkVersion 21
         targetSdk 34
         versionCode 12
